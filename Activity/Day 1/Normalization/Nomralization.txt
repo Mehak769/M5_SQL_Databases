@@ -1,0 +1,60 @@
+login{
+loginid varchar(40) not null;
+loginroleid int(10) not null;
+loginusername char(40)not null;
+userpassword varchar(40)not null;
+Primary key (loginroleid);
+}
+
+user{
+useraddress varchar(40)not null;
+useremail varchar(40)not null;
+username char(40)not null;
+usermobile int(15)not null;
+userid int(10)not null;
+Primary key (userid);
+}
+
+roles{
+roleid int(10)not null;
+rolename char(40)not null;
+roledesc varchar(40)not null;
+Primary key(roleid);
+}
+permission{
+perroleid int(10)not null;
+permoudle char(40)not null;
+pername char(40)not null;
+Primary key (perroleid);
+}
+
+peoples{
+pname char(40)not null;
+pid int(10)not null;
+pmobile int(15)not null;
+pemail varchar(40)not null;
+ppass varchar(40)not null;
+Primary key (pid);
+}
+contact{
+conid int(10)not null;
+condesc char (40)not null;
+contype char(40)not null;
+Primary key (conid);
+}
+mobile{
+mobnum int(15)not null;
+mobtype char(40)not null;
+mobdesc char(40)not null;
+mobpplid int(10)not null;
+mobid int(10)not null;
+Primary key (mobid);
+}
+address{
+addplace varchar(40)not null;
+addid int(10)not null;
+addesc char(40)not null;
+addpplid int(10)not null;
+addtype char(40)not null;
+Primary key (addid);
+}
